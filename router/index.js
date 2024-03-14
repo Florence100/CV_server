@@ -4,6 +4,6 @@ import PdfController from '../controllers/pdfController.js';
 const Router = express.Router;
 const router = new Router();
 
-router.post('/createPDF', PdfController.createPDF);
+router.get('/createPDF', PdfController.createPDF);
 
 export default router;
