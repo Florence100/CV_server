@@ -9,7 +9,7 @@ class PdfService {
         await page.addStyleTag({content: '.download-pdf {display: none;} .article.last {padding-top: 10px;} .email:hover {background: green;}'})
         await page.emulateMediaType('screen');
         const buffer = await page.pdf({
-            margin: { top: '0px', right: '0px', bottom: '0px', left: '0px' },
+            margin: { top: '5px', right: '0px', bottom: '5px', left: '0px' },
             printBackground: true,
             format: 'A4',
         });
